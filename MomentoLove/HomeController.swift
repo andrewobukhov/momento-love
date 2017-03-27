@@ -10,6 +10,8 @@ import UIKit
 
 class HomeController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,11 @@ class HomeController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        nameLabel.text = "Email: \(Shared.shared.user.email)"
     }
     
 
