@@ -11,5 +11,5 @@ import Foundation
 final class Shared {
     static let shared = Shared() //lazy init, and it only runs once
     
-    var user: User!
+    var user: User! = User()
 }

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         
+
         guard let email = emailText.text, let password = passwordText.text else {
             self.errorLabel.text = "Form is not valid!"
             return
