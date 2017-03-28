@@ -10,6 +10,7 @@
 		00528898842F8F74A4C61257 /* Pods_MomentoLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35D6E5121BBA59DBC49220 /* Pods_MomentoLove.framework */; };
 		DD7ECA411E89A745004B9262 /* YouAreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA401E89A745004B9262 /* YouAreController.swift */; };
 		DD7ECA451E89A941004B9262 /* HereForController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA441E89A941004B9262 /* HereForController.swift */; };
+		DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */; };
 		DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA411E88310800B924B7 /* AppDelegate.swift */; };
 		DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA431E88310800B924B7 /* ViewController.swift */; };
 		DDDCCA471E88310800B924B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDCCA451E88310800B924B7 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		B05224A71F0B1088D917DFD0 /* Pods-MomentoLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentoLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-MomentoLove/Pods-MomentoLove.release.xcconfig"; sourceTree = "<group>"; };
 		DD7ECA401E89A745004B9262 /* YouAreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouAreController.swift; sourceTree = "<group>"; };
 		DD7ECA441E89A941004B9262 /* HereForController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereForController.swift; sourceTree = "<group>"; };
+		DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountController.swift; sourceTree = "<group>"; };
 		DDDCCA3E1E88310800B924B7 /* MomentoLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentoLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDCCA411E88310800B924B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDCCA431E88310800B924B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				DDDCCA591E884F2A00B924B7 /* HomeController.swift */,
 				DD7ECA401E89A745004B9262 /* YouAreController.swift */,
 				DD7ECA441E89A941004B9262 /* HereForController.swift */,
+				DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */,
 			);
 			name = Controllers;
 			path = MomentoLove;
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */,
 				DD7ECA411E89A745004B9262 /* YouAreController.swift in Sources */,
 				DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */,
 				DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */,

@@ -1,21 +1,15 @@
 //
-//  HereForController.swift
+//  NewAccountController.swift
 //  MomentoLove
 //
-//  Created by Andrew Obukhov on 27/03/2017.
+//  Created by Andrew Obukhov on 28/03/2017.
 //  Copyright © 2017 Andrew Obukhov. All rights reserved.
 //
 
 import UIKit
 
-class HereForController: UIViewController {
+class NewAccountController: UIViewController {
 
-    
-    
-    @IBAction func backButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
