@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00528898842F8F74A4C61257 /* Pods_MomentoLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35D6E5121BBA59DBC49220 /* Pods_MomentoLove.framework */; };
+		DD1F8DF41E8AFA17007BB654 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF31E8AFA17007BB654 /* DataService.swift */; };
+		DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF61E8B0192007BB654 /* UserService.swift */; };
 		DD7ECA411E89A745004B9262 /* YouAreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA401E89A745004B9262 /* YouAreController.swift */; };
 		DD7ECA451E89A941004B9262 /* HereForController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA441E89A941004B9262 /* HereForController.swift */; };
 		DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		A75C155BF51DC8906C65C5F7 /* Pods-MomentoLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentoLove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MomentoLove/Pods-MomentoLove.debug.xcconfig"; sourceTree = "<group>"; };
 		B05224A71F0B1088D917DFD0 /* Pods-MomentoLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentoLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-MomentoLove/Pods-MomentoLove.release.xcconfig"; sourceTree = "<group>"; };
+		DD1F8DF31E8AFA17007BB654 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DD1F8DF61E8B0192007BB654 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DD7ECA401E89A745004B9262 /* YouAreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouAreController.swift; sourceTree = "<group>"; };
 		DD7ECA441E89A941004B9262 /* HereForController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereForController.swift; sourceTree = "<group>"; };
 		DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD1F8DF21E8AFA00007BB654 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DD1F8DF51E8B0173007BB654 /* UserService */,
+				DD1F8DF31E8AFA17007BB654 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DD1F8DF51E8B0173007BB654 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				DD1F8DF61E8B0192007BB654 /* UserService.swift */,
+			);
+			name = UserService;
+			sourceTree = "<group>";
+		};
 		DDDCCA351E88310800B924B7 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +113,7 @@
 		DDDCCA401E88310800B924B7 /* MomentoLove */ = {
 			isa = PBXGroup;
 			children = (
+				DD1F8DF21E8AFA00007BB654 /* Services */,
 				DDDCCA5D1E88658300B924B7 /* Data */,
 				DDDCCA581E8848B400B924B7 /* Controllers */,
 				DDDCCA411E88310800B924B7 /* AppDelegate.swift */,
@@ -251,11 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1F8DF41E8AFA17007BB654 /* DataService.swift in Sources */,
 				DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */,
 				DD7ECA411E89A745004B9262 /* YouAreController.swift in Sources */,
 				DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */,
 				DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */,
 				DD7ECA451E89A941004B9262 /* HereForController.swift in Sources */,
+				DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */,
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
 				DDDCCA611E8865DA00B924B7 /* User.swift in Sources */,
 				DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */,

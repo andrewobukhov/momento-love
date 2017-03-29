@@ -65,7 +65,14 @@ class ViewController: UIViewController {
     func createUser(email: String, password: String) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password) {(user, error) in
             if let user = user {
+                
+                let u = User(id: user.uid, email: user.email!, name: "Andrew")
+                
+                UserService.userService.updateUser(user: u)
+                
                 self.goHome(user: user)
+                
+                
             } else if let e = error?.localizedDescription {
                 self.errorLabel.text = e
             }
@@ -74,7 +81,7 @@ class ViewController: UIViewController {
     }
     
     func goHome(user: FIRUser){
-        Shared.shared.user = User(id: user.uid, email: user.email!)
+        Shared.shared.user = User(id: user.uid, email: user.email!, name: "Andrew")
         self.performSegue(withIdentifier: "home", sender: self)
     }
 }
