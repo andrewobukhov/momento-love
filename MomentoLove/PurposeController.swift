@@ -10,6 +10,19 @@ import UIKit
 
 class PurposeController: UIViewController {
 
+    
+    @IBAction func makeFriendsAction(_ sender: Any) {
+        goNext(purpose: .friends)
+    }
+    
+    @IBAction func chatAction(_ sender: Any) {
+        goNext(purpose: .chat)
+    }
+    
+    @IBAction func dateAction(_ sender: Any) {
+        goNext(purpose: .date)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,4 +31,8 @@ class PurposeController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func goNext(purpose: Purpose) {
+        Shared.shared.user.purpose = purpose
+        performSegue(withIdentifier: "login", sender: self)
+    }
 }

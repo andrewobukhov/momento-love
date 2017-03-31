@@ -13,25 +13,30 @@ final class User {
     public var email: String
     public var name: String
     
-    public var sex: Sex
+    public var sex: Sex = Sex.male
+    public var purpose: Purpose = Purpose.friends
     
     public init(id: String, email: String, name: String)
     {
         self.id = id
         self.email = email
         self.name = name
-        self.sex = Sex.male
     }
     
     public init(){
         self.id = ""
         self.email = ""
         self.name = ""
-        self.sex = Sex.male
     }
 }
 
 enum Sex{
     case male
     case female
+}
+
+enum Purpose {
+    case friends
+    case chat
+    case date
 }
