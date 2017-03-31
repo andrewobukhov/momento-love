@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1c-4E-Qea">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1c-4E-Qea">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,11 +87,8 @@
                                 <rect key="frame" x="151" y="399" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="PQ3-uK-qwE" kind="show" id="Bm1-2U-aqc"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-7I-HEp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-7I-HEp">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
@@ -102,9 +99,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginAction:" destination="xZe-KL-kJG" eventType="touchUpInside" id="1pO-uB-PIv"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,7 +117,7 @@
                             <constraint firstAttribute="trailing" secondItem="Vwx-9d-s91" secondAttribute="trailing" id="lzE-ga-VKi"/>
                             <constraint firstItem="vGk-C6-ode" firstAttribute="leading" secondItem="NgL-Zp-9S0" secondAttribute="leadingMargin" id="rRW-aK-Tas"/>
                             <constraint firstItem="JJf-FY-ZWz" firstAttribute="top" secondItem="vGk-C6-ode" secondAttribute="bottom" constant="28" id="s4a-sb-5yY"/>
-                            <constraint firstItem="Cbl-7I-HEp" firstAttribute="top" secondItem="7ni-e8-8qh" secondAttribute="bottom" constant="173" id="wNR-I3-dQ7"/>
+                            <constraint firstItem="Cbl-7I-HEp" firstAttribute="top" secondItem="7ni-e8-8qh" secondAttribute="bottom" constant="262" id="wNR-I3-dQ7"/>
                             <constraint firstItem="vGk-C6-ode" firstAttribute="top" secondItem="4rw-9P-gvG" secondAttribute="bottom" constant="166" id="xP8-Fm-yrf"/>
                         </constraints>
                     </view>
@@ -162,9 +156,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginAction:" destination="PQ3-uK-qwE" eventType="touchUpInside" id="mc5-A0-krz"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-qz-Di5">
                                 <rect key="frame" x="17" y="325" width="343" height="30"/>
@@ -183,9 +174,6 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginAction:" destination="PQ3-uK-qwE" eventType="touchUpInside" id="g4M-0w-bB8"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And you are here to..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-Fw-U6E">
                                 <rect key="frame" x="16" y="230" width="343" height="21"/>
@@ -210,17 +198,6 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginAction:" destination="PQ3-uK-qwE" eventType="touchUpInside" id="TEf-wl-SeK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrd-AD-wFT">
-                                <rect key="frame" x="17" y="108" width="33" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BackArrow"/>
-                                <connections>
-                                    <action selector="backButton:" destination="PQ3-uK-qwE" eventType="touchUpInside" id="5id-QT-GnL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-hn-Hvq">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
@@ -233,9 +210,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginAction:" destination="PQ3-uK-qwE" eventType="touchUpInside" id="Zet-a8-mUB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,11 +243,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackArrow" width="102" height="102"/>
         <image name="Flower" width="564" height="1001"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="EKG-TM-Tal"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
