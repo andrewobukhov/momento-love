@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YouAreController: UIViewController {
+class SexController: UIViewController {
     
     
     @IBAction func maleButton(_ sender: UIButton) {
@@ -21,12 +21,25 @@ class YouAreController: UIViewController {
     
     func goNext(sex: Sex) {
         Shared.shared.user.sex = sex
-        performSegue(withIdentifier: "hereFor", sender: self)
+        performSegue(withIdentifier: "purpose", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let navBar = self.navigationController?.navigationBar {
+            extendedLayoutIncludesOpaqueBars = true
+            navBar.isTranslucent = true
+            navBar.backgroundColor = UIColor.clear
+            navBar.setBackgroundImage(UIImage(), for: .default)
+            navBar.shadowImage = UIImage()
+            self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+            
+            
+            navBar.tintColor = UIColor.lightGray
+        }
+
+        
         // Do any additional setup after loading the view.
     }
 
@@ -34,7 +47,7 @@ class YouAreController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation

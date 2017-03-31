@@ -8,12 +8,12 @@
 
 import UIKit
 
-class HereForController: UIViewController {
+class PurposeController: UIViewController {
 
-    
-    
     @IBAction func backButton(_ sender: Any) {
+        print("backButton")
         dismiss(animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {

@@ -31,7 +31,6 @@ final class User {
     }
 }
 
-
 enum Sex{
     case male
     case female

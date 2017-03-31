@@ -14,8 +14,14 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let navBar = self.navigationController?.navigationBar {
+            extendedLayoutIncludesOpaqueBars = true
+            navBar.isTranslucent = true
+            navBar.backgroundColor = UIColor.clear
+            navBar.setBackgroundImage(UIImage(), for: .default)
+            navBar.shadowImage = UIImage()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +31,6 @@ class HomeController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        nameLabel.text = "Email: \(Shared.shared.user.email)"
     }
     
 
