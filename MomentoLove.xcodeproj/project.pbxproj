@@ -10,6 +10,16 @@
 		00528898842F8F74A4C61257 /* Pods_MomentoLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35D6E5121BBA59DBC49220 /* Pods_MomentoLove.framework */; };
 		DD1F8DF41E8AFA17007BB654 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF31E8AFA17007BB654 /* DataService.swift */; };
 		DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF61E8B0192007BB654 /* UserService.swift */; };
+		DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972371E8ED55C00A47372 /* LoginViewController.swift */; };
+		DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972491E8EDF7400A47372 /* DatepickerView.swift */; };
+		DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD29724B1E8EE01100A47372 /* DatepickerView.xib */; };
+		DD2972571E8F15B000A47372 /* IMG_0170.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972501E8F15B000A47372 /* IMG_0170.PNG */; };
+		DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972511E8F15B000A47372 /* IMG_0172.PNG */; };
+		DD2972591E8F15B000A47372 /* IMG_0173.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972521E8F15B000A47372 /* IMG_0173.PNG */; };
+		DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972531E8F15B000A47372 /* IMG_0174.PNG */; };
+		DD29725B1E8F15B000A47372 /* IMG_0175.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972541E8F15B000A47372 /* IMG_0175.PNG */; };
+		DD29725C1E8F15B000A47372 /* IMG_0176.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972551E8F15B000A47372 /* IMG_0176.PNG */; };
+		DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972561E8F15B000A47372 /* IMG_0177.PNG */; };
 		DD7ECA411E89A745004B9262 /* SexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA401E89A745004B9262 /* SexController.swift */; };
 		DD7ECA451E89A941004B9262 /* PurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA441E89A941004B9262 /* PurposeController.swift */; };
 		DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */; };
@@ -30,6 +40,16 @@
 		B05224A71F0B1088D917DFD0 /* Pods-MomentoLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentoLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-MomentoLove/Pods-MomentoLove.release.xcconfig"; sourceTree = "<group>"; };
 		DD1F8DF31E8AFA17007BB654 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DD1F8DF61E8B0192007BB654 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		DD2972371E8ED55C00A47372 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD2972491E8EDF7400A47372 /* DatepickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatepickerView.swift; sourceTree = "<group>"; };
+		DD29724B1E8EE01100A47372 /* DatepickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatepickerView.xib; sourceTree = "<group>"; };
+		DD2972501E8F15B000A47372 /* IMG_0170.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0170.PNG; sourceTree = "<group>"; };
+		DD2972511E8F15B000A47372 /* IMG_0172.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0172.PNG; sourceTree = "<group>"; };
+		DD2972521E8F15B000A47372 /* IMG_0173.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0173.PNG; sourceTree = "<group>"; };
+		DD2972531E8F15B000A47372 /* IMG_0174.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0174.PNG; sourceTree = "<group>"; };
+		DD2972541E8F15B000A47372 /* IMG_0175.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0175.PNG; sourceTree = "<group>"; };
+		DD2972551E8F15B000A47372 /* IMG_0176.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0176.PNG; sourceTree = "<group>"; };
+		DD2972561E8F15B000A47372 /* IMG_0177.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0177.PNG; sourceTree = "<group>"; };
 		DD7ECA401E89A745004B9262 /* SexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexController.swift; sourceTree = "<group>"; };
 		DD7ECA441E89A941004B9262 /* PurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeController.swift; sourceTree = "<group>"; };
 		DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountController.swift; sourceTree = "<group>"; };
@@ -94,6 +114,37 @@
 			name = UserService;
 			sourceTree = "<group>";
 		};
+		DD2972391E8EDC3A00A47372 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DD29723E1E8EDCD800A47372 /* Datepicker */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		DD29723E1E8EDCD800A47372 /* Datepicker */ = {
+			isa = PBXGroup;
+			children = (
+				DD2972491E8EDF7400A47372 /* DatepickerView.swift */,
+				DD29724B1E8EE01100A47372 /* DatepickerView.xib */,
+			);
+			name = Datepicker;
+			sourceTree = "<group>";
+		};
+		DD29724D1E8F154300A47372 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				DD2972501E8F15B000A47372 /* IMG_0170.PNG */,
+				DD2972511E8F15B000A47372 /* IMG_0172.PNG */,
+				DD2972521E8F15B000A47372 /* IMG_0173.PNG */,
+				DD2972531E8F15B000A47372 /* IMG_0174.PNG */,
+				DD2972541E8F15B000A47372 /* IMG_0175.PNG */,
+				DD2972551E8F15B000A47372 /* IMG_0176.PNG */,
+				DD2972561E8F15B000A47372 /* IMG_0177.PNG */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
 		DDCEABD91E8C4700004EA986 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +159,7 @@
 				DD7ECA441E89A941004B9262 /* PurposeController.swift */,
 				DD7ECA401E89A745004B9262 /* SexController.swift */,
 				DDCEABDE1E8C48E0004EA986 /* Login.storyboard */,
+				DD2972371E8ED55C00A47372 /* LoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -133,6 +185,8 @@
 		DDDCCA401E88310800B924B7 /* MomentoLove */ = {
 			isa = PBXGroup;
 			children = (
+				DD29724D1E8F154300A47372 /* Screenshots */,
+				DD2972391E8EDC3A00A47372 /* Shared */,
 				DDCEABD91E8C4700004EA986 /* Views */,
 				DD1F8DF21E8AFA00007BB654 /* Services */,
 				DDDCCA5D1E88658300B924B7 /* Data */,
@@ -231,8 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDCCA4C1E88310800B924B7 /* LaunchScreen.storyboard in Resources */,
+				DD29725C1E8F15B000A47372 /* IMG_0176.PNG in Resources */,
+				DD2972591E8F15B000A47372 /* IMG_0173.PNG in Resources */,
 				DDCEABDF1E8C48E0004EA986 /* Login.storyboard in Resources */,
+				DD29725B1E8F15B000A47372 /* IMG_0175.PNG in Resources */,
+				DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */,
+				DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */,
+				DD2972571E8F15B000A47372 /* IMG_0170.PNG in Resources */,
 				DDDCCA541E88314600B924B7 /* GoogleService-Info.plist in Resources */,
+				DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */,
+				DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */,
 				DDDCCA491E88310800B924B7 /* Assets.xcassets in Resources */,
 				DDDCCA471E88310800B924B7 /* Main.storyboard in Resources */,
 			);
@@ -303,6 +365,8 @@
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
 				DDDCCA611E8865DA00B924B7 /* User.swift in Sources */,
 				DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */,
+				DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */,
+				DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
