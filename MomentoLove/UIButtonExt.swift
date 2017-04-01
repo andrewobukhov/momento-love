@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 extension UIButton {
- 
+    
     func addRadiusBorder(color: UIColor, radius: CGFloat,  thickness: CGFloat) {
         self.layer.borderColor = color.cgColor
         self.layer.borderWidth = thickness
@@ -18,7 +18,7 @@ extension UIButton {
     }
     
     func addRadiusBorder() {
-        self.addRadiusBorder(color: UIColor.groupTableViewBackground, radius: 15, thickness: 2)
+        self.addRadiusBorder(color: UIColor.groupTableViewBackground, radius: 20, thickness: 2)
     }
-
+    
 }

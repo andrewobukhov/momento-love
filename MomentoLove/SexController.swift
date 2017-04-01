@@ -11,6 +11,10 @@ import UIKit
 class SexController: UIViewController {
     
     
+    @IBOutlet weak var maleBtn: UIButton!
+    
+    @IBOutlet weak var femaleBtn: UIButton!
+    
     @IBAction func maleButton(_ sender: UIButton) {
         goNext(sex: Sex.male)
     }
@@ -27,16 +31,10 @@ class SexController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let navBar = self.navigationController?.navigationBar {
-            extendedLayoutIncludesOpaqueBars = true
-            navBar.isTranslucent = true
-            navBar.backgroundColor = UIColor.clear
-            navBar.setBackgroundImage(UIImage(), for: .default)
-            navBar.shadowImage = UIImage()
-            self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
-            
-            navBar.tintColor = UIColor.lightGray
-        }
+        maleBtn.addRadiusBorder()
+        femaleBtn.addRadiusBorder()
+        
+        self.hideNavigationBar()
     }
     
     override func didReceiveMemoryWarning() {

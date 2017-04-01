@@ -20,6 +20,8 @@ class PurposeController: UIViewController {
         [dateBtn, chatBtn, makeFriendsBtn].forEach { btn in
             btn.addRadiusBorder()
         }
+        
+        self.hideNavigationBar()
     }
     
     @IBAction func makeFriendsAction(_ sender: Any) {

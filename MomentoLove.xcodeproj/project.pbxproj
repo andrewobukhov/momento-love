@@ -13,7 +13,6 @@
 		DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972371E8ED55C00A47372 /* LoginViewController.swift */; };
 		DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972491E8EDF7400A47372 /* DatepickerView.swift */; };
 		DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD29724B1E8EE01100A47372 /* DatepickerView.xib */; };
-		DD2972571E8F15B000A47372 /* IMG_0170.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972501E8F15B000A47372 /* IMG_0170.PNG */; };
 		DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972511E8F15B000A47372 /* IMG_0172.PNG */; };
 		DD2972591E8F15B000A47372 /* IMG_0173.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972521E8F15B000A47372 /* IMG_0173.PNG */; };
 		DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972531E8F15B000A47372 /* IMG_0174.PNG */; };
@@ -33,6 +32,9 @@
 		DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA591E884F2A00B924B7 /* HomeController.swift */; };
 		DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA5E1E8865B300B924B7 /* Shared.swift */; };
 		DDDCCA611E8865DA00B924B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA601E8865DA00B924B7 /* User.swift */; };
+		DDFF594B1E902291007C0612 /* CALayerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF59491E902291007C0612 /* CALayerExt.swift */; };
+		DDFF594C1E902291007C0612 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF594A1E902291007C0612 /* UIButtonExt.swift */; };
+		DDFF594E1E902EED007C0612 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,6 @@
 		DD2972371E8ED55C00A47372 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD2972491E8EDF7400A47372 /* DatepickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatepickerView.swift; sourceTree = "<group>"; };
 		DD29724B1E8EE01100A47372 /* DatepickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatepickerView.xib; sourceTree = "<group>"; };
-		DD2972501E8F15B000A47372 /* IMG_0170.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0170.PNG; sourceTree = "<group>"; };
 		DD2972511E8F15B000A47372 /* IMG_0172.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0172.PNG; sourceTree = "<group>"; };
 		DD2972521E8F15B000A47372 /* IMG_0173.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0173.PNG; sourceTree = "<group>"; };
 		DD2972531E8F15B000A47372 /* IMG_0174.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0174.PNG; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		DDDCCA591E884F2A00B924B7 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DDDCCA5E1E8865B300B924B7 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		DDDCCA601E8865DA00B924B7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDFF59491E902291007C0612 /* CALayerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExt.swift; sourceTree = "<group>"; };
+		DDFF594A1E902291007C0612 /* UIButtonExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		EE35D6E5121BBA59DBC49220 /* Pods_MomentoLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentoLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,7 +138,6 @@
 		DD29724D1E8F154300A47372 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				DD2972501E8F15B000A47372 /* IMG_0170.PNG */,
 				DD2972511E8F15B000A47372 /* IMG_0172.PNG */,
 				DD2972521E8F15B000A47372 /* IMG_0173.PNG */,
 				DD2972531E8F15B000A47372 /* IMG_0174.PNG */,
@@ -148,6 +151,7 @@
 		DDCEABD91E8C4700004EA986 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DDFF59481E90223B007C0612 /* Common */,
 				DDCEABDA1E8C470D004EA986 /* Login */,
 			);
 			name = Views;
@@ -221,6 +225,16 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		DDFF59481E90223B007C0612 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF59491E902291007C0612 /* CALayerExt.swift */,
+				DDFF594A1E902291007C0612 /* UIButtonExt.swift */,
+				DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,7 +305,6 @@
 				DD29725B1E8F15B000A47372 /* IMG_0175.PNG in Resources */,
 				DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */,
 				DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */,
-				DD2972571E8F15B000A47372 /* IMG_0170.PNG in Resources */,
 				DDDCCA541E88314600B924B7 /* GoogleService-Info.plist in Resources */,
 				DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */,
 				DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */,
@@ -360,6 +373,9 @@
 				DD7ECA411E89A745004B9262 /* SexController.swift in Sources */,
 				DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */,
 				DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */,
+				DDFF594E1E902EED007C0612 /* UIViewControllerExt.swift in Sources */,
+				DDFF594C1E902291007C0612 /* UIButtonExt.swift in Sources */,
+				DDFF594B1E902291007C0612 /* CALayerExt.swift in Sources */,
 				DD7ECA451E89A941004B9262 /* PurposeController.swift in Sources */,
 				DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */,
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
