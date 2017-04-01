@@ -35,7 +35,7 @@ class SexController: UIViewController {
             navBar.shadowImage = UIImage()
             self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
             
-            navBar.tintColor = UIColor.red
+            navBar.tintColor = UIColor.lightGray
         }
     }
     

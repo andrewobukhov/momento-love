@@ -10,6 +10,17 @@ import UIKit
 
 class PurposeController: UIViewController {
 
+    @IBOutlet weak var makeFriendsBtn: UIButton!
+    @IBOutlet weak var chatBtn: UIButton!
+    @IBOutlet weak var dateBtn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        [dateBtn, chatBtn, makeFriendsBtn].forEach { btn in
+            btn.addRadiusBorder()
+        }
+    }
     
     @IBAction func makeFriendsAction(_ sender: Any) {
         goNext(purpose: .friends)
@@ -23,10 +34,6 @@ class PurposeController: UIViewController {
         goNext(purpose: .date)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
