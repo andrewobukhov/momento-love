@@ -58,7 +58,6 @@ class ViewController: UIViewController {
             } else if let e = error?.localizedDescription {
                 self.errorLabel.text = e
             }
-            
         }
     }
     
@@ -68,7 +67,7 @@ class ViewController: UIViewController {
                 
                 let u = User(id: user.uid, email: user.email!, name: "Andrew")
                 
-                UserService.userService.updateUser(user: u)
+                UserService.instance.updateUser(user: u)
                 
                 self.goHome(user: user)
                 

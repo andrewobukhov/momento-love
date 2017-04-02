@@ -8,8 +8,13 @@
 
 import Foundation
 
-/*
-extension ImplicitlyUnwrappedOptional<String> {
-    func format(_ format: String) -> String {
+
+extension String {
+    func isEmpty() -> Bool {
+        return self == String()
     }
-}*/
+    
+    func isNotEmpty() -> Bool {
+        return !self.isEmpty()
+    }
+}

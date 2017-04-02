@@ -11,7 +11,7 @@ import Firebase
 
 final class UserService {
     
-    static let userService = UserService() //lazy init, and it only runs once
+    static let instance = UserService() //lazy init, and it only runs once
 
     lazy var usersRef: FIRDatabaseReference! = FIRDatabase.database().reference().child("users");
     
@@ -31,4 +31,11 @@ final class UserService {
         updateUser(values: values)
     }
     
+    func createUser(email: String, password: String, completion: FirebaseAuth.FIRAuthResultCallback? = nil){
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: completion)
+    }
+    
+    func signIn(email: String, password: String, completion: FirebaseAuth.FIRAuthResultCallback? = nil) {
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: completion)
+    }
 }

@@ -21,7 +21,6 @@
 		DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972561E8F15B000A47372 /* IMG_0177.PNG */; };
 		DD7ECA411E89A745004B9262 /* SexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA401E89A745004B9262 /* SexController.swift */; };
 		DD7ECA451E89A941004B9262 /* PurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA441E89A941004B9262 /* PurposeController.swift */; };
-		DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */; };
 		DDCEABDF1E8C48E0004EA986 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCEABDE1E8C48E0004EA986 /* Login.storyboard */; };
 		DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA411E88310800B924B7 /* AppDelegate.swift */; };
 		DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA431E88310800B924B7 /* ViewController.swift */; };
@@ -29,7 +28,6 @@
 		DDDCCA491E88310800B924B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDCCA481E88310800B924B7 /* Assets.xcassets */; };
 		DDDCCA4C1E88310800B924B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDCCA4A1E88310800B924B7 /* LaunchScreen.storyboard */; };
 		DDDCCA541E88314600B924B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDDCCA531E88314600B924B7 /* GoogleService-Info.plist */; };
-		DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA591E884F2A00B924B7 /* HomeController.swift */; };
 		DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA5E1E8865B300B924B7 /* Shared.swift */; };
 		DDDCCA611E8865DA00B924B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDCCA601E8865DA00B924B7 /* User.swift */; };
 		DDFF594B1E902291007C0612 /* CALayerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF59491E902291007C0612 /* CALayerExt.swift */; };
@@ -57,7 +55,6 @@
 		DD2972561E8F15B000A47372 /* IMG_0177.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0177.PNG; sourceTree = "<group>"; };
 		DD7ECA401E89A745004B9262 /* SexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexController.swift; sourceTree = "<group>"; };
 		DD7ECA441E89A941004B9262 /* PurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeController.swift; sourceTree = "<group>"; };
-		DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountController.swift; sourceTree = "<group>"; };
 		DDCEABDE1E8C48E0004EA986 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DDDCCA3E1E88310800B924B7 /* MomentoLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentoLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDCCA411E88310800B924B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +64,6 @@
 		DDDCCA4B1E88310800B924B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDDCCA4D1E88310800B924B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDCCA531E88314600B924B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DDDCCA591E884F2A00B924B7 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DDDCCA5E1E8865B300B924B7 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		DDDCCA601E8865DA00B924B7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDFF59491E902291007C0612 /* CALayerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExt.swift; sourceTree = "<group>"; };
@@ -204,7 +200,6 @@
 				DDCEABD91E8C4700004EA986 /* Views */,
 				DD1F8DF21E8AFA00007BB654 /* Services */,
 				DDDCCA5D1E88658300B924B7 /* Data */,
-				DDDCCA581E8848B400B924B7 /* Controllers */,
 				DDDCCA411E88310800B924B7 /* AppDelegate.swift */,
 				DDDCCA431E88310800B924B7 /* ViewController.swift */,
 				DDDCCA451E88310800B924B7 /* Main.storyboard */,
@@ -215,16 +210,6 @@
 			);
 			path = MomentoLove;
 			sourceTree = "<group>";
-		};
-		DDDCCA581E8848B400B924B7 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DDDCCA591E884F2A00B924B7 /* HomeController.swift */,
-				DD7ECA461E8A3A94004B9262 /* NewAccountController.swift */,
-			);
-			name = Controllers;
-			path = MomentoLove;
-			sourceTree = SOURCE_ROOT;
 		};
 		DDDCCA5D1E88658300B924B7 /* Data */ = {
 			isa = PBXGroup;
@@ -381,7 +366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1F8DF41E8AFA17007BB654 /* DataService.swift in Sources */,
-				DD7ECA471E8A3A94004B9262 /* NewAccountController.swift in Sources */,
 				DD7ECA411E89A745004B9262 /* SexController.swift in Sources */,
 				DDDCCA441E88310800B924B7 /* ViewController.swift in Sources */,
 				DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */,
@@ -396,7 +380,6 @@
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
 				DDDCCA611E8865DA00B924B7 /* User.swift in Sources */,
 				DDFF59541E9115A6007C0612 /* SignInViewController.swift in Sources */,
-				DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */,
 				DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */,
 				DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */,
 			);
