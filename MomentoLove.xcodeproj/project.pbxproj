@@ -37,6 +37,8 @@
 		DDFF594E1E902EED007C0612 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */; };
 		DDFF59501E9047E9007C0612 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF594F1E9047E9007C0612 /* DateExt.swift */; };
 		DDFF59521E904E0C007C0612 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF59511E904E0C007C0612 /* StringExt.swift */; };
+		DDFF59541E9115A6007C0612 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF59531E9115A6007C0612 /* SignInViewController.swift */; };
+		DDFF59561E916857007C0612 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF59551E916857007C0612 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		DDFF594F1E9047E9007C0612 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		DDFF59511E904E0C007C0612 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		DDFF59531E9115A6007C0612 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DDFF59551E916857007C0612 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		EE35D6E5121BBA59DBC49220 /* Pods_MomentoLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentoLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,8 @@
 				DD7ECA401E89A745004B9262 /* SexController.swift */,
 				DDCEABDE1E8C48E0004EA986 /* Login.storyboard */,
 				DD2972371E8ED55C00A47372 /* LoginViewController.swift */,
+				DDFF59531E9115A6007C0612 /* SignInViewController.swift */,
+				DDFF59551E916857007C0612 /* ForgotPasswordViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				DDDCCA421E88310800B924B7 /* AppDelegate.swift in Sources */,
 				DDFF594E1E902EED007C0612 /* UIViewControllerExt.swift in Sources */,
 				DDFF594C1E902291007C0612 /* UIButtonExt.swift in Sources */,
+				DDFF59561E916857007C0612 /* ForgotPasswordViewController.swift in Sources */,
 				DDFF59501E9047E9007C0612 /* DateExt.swift in Sources */,
 				DDFF594B1E902291007C0612 /* CALayerExt.swift in Sources */,
 				DD7ECA451E89A941004B9262 /* PurposeController.swift in Sources */,
@@ -388,6 +395,7 @@
 				DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */,
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
 				DDDCCA611E8865DA00B924B7 /* User.swift in Sources */,
+				DDFF59541E9115A6007C0612 /* SignInViewController.swift in Sources */,
 				DDDCCA5A1E884F2A00B924B7 /* HomeController.swift in Sources */,
 				DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */,
 				DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */,

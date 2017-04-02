@@ -26,5 +26,26 @@ extension UIViewController {
         }
         
     }
+
+    func setNavigationBarColor(color: UIColor, textColor: UIColor) {
+        if let navBar = self.navigationController?.navigationBar {
+            navBar.barTintColor = color
+            navBar.tintColor = textColor
+        }
+    }
+    
+    func setBackBarButtonTitle(title: String = String()) {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: nil, action: nil)
+    }
+
+    func addRightButtonToNavigationBar(title: String, color: UIColor, action: Selector?) {
+        if let navBar = self.navigationController?.navigationBar {
+            
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: nil, action:action)
+            
+            navBar.tintColor = color
+        }
+
+    }
 }
 
