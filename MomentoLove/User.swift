@@ -9,11 +9,17 @@
 import Foundation
 
 final class User {
-    public var id: String
-    public var email: String
-    public var name: String
+    
+    public var id: String = String()
+    
+    public var email: String = String()
+    
+    public var name: String = String()
+    
+    public var birthday: Date!
     
     public var sex: Sex = Sex.male
+    
     public var purpose: Purpose = Purpose.friends
     
     public init(id: String, email: String, name: String)
@@ -23,11 +29,7 @@ final class User {
         self.name = name
     }
     
-    public init(){
-        self.id = ""
-        self.email = ""
-        self.name = ""
-    }
+    public init(){}
 }
 
 enum Sex{
