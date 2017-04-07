@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch Controller-->
         <scene sceneID="Rmz-OE-Ktk">
             <objects>
-                <viewController id="OPO-i8-LTu" sceneMemberID="viewController">
+                <viewController id="OPO-i8-LTu" customClass="LaunchController" customModule="MomentoLove" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cgn-me-JS5"/>
                         <viewControllerLayoutGuide type="bottom" id="YKo-vR-Ktt"/>
@@ -26,12 +26,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GO"/>
                                 <connections>
-                                    <segue destination="e1Z-UB-tFA" kind="show" id="sMS-5D-V5p"/>
+                                    <segue destination="e1Z-UB-tFA" kind="show" identifier="login" id="sMS-5D-V5p"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="fcg-Df-6K9" kind="show" identifier="profile" id="Ro4-EB-U9b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcb-s5-duG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +48,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI0-CE-alb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="-866"/>
+            <point key="canvasLocation" x="-244" y="-954"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="MbA-ov-4mU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="fcg-Df-6K9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHQ-eQ-Hqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="-792"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>

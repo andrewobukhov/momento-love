@@ -36,9 +36,10 @@ class SignInViewController: UIViewController {
         
         UserService.instance.signIn(email: email, password: password) {(user, error) in
             if let user = user {
-                //self.goHome(user: user)
                 
-                print(user)
+                Shared.shared.user.id = user.uid
+                
+                self.performSegue(withIdentifier: "profile", sender: self)
             } else if let e = error?.localizedDescription {
                 self.createAlert(e)
             }

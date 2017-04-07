@@ -283,7 +283,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="emailEditingDidEndAction:" destination="q1Y-Et-08L" eventType="editingDidEnd" id="Fhl-zq-dfM"/>
+                                            <action selector="editingChanged:" destination="q1Y-Et-08L" eventType="editingChanged" id="mIT-XF-Ke5"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0X-3b-QZd">
@@ -293,7 +293,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="nameEditingDidEndAction:" destination="q1Y-Et-08L" eventType="editingDidEnd" id="ItG-4u-LGb"/>
+                                            <action selector="editingChanged:" destination="q1Y-Et-08L" eventType="editingChanged" id="L0J-xi-DlN"/>
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JpY-DG-IDz">
@@ -341,6 +341,9 @@
                                         <state key="normal" title="Create account">
                                             <color key="titleColor" red="0.60249900817871094" green="0.64014530181884766" blue="0.6694151759147644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createAccountAction:" destination="q1Y-Et-08L" eventType="touchUpInside" id="413-OM-q1N"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </view>
@@ -360,11 +363,20 @@
                         <outlet property="emailTxt" destination="Fej-g4-CqK" id="vTC-jy-csc"/>
                         <outlet property="logoImg" destination="4bD-mi-Azx" id="0eZ-qC-IrU"/>
                         <outlet property="nameTxt" destination="F0X-3b-QZd" id="TjH-pg-HA7"/>
+                        <segue destination="Ibx-ta-Rl9" kind="show" identifier="profile" id="Ikw-xc-gJj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xU-wZ-H0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="88.799999999999997" y="-916.1919040479761"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="GMW-IU-DQI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Ibx-ta-Rl9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lO7-2G-FWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-612"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="x2f-uA-Twb">
@@ -483,11 +495,12 @@
                     <connections>
                         <outlet property="passwordTxt" destination="k4Z-zi-Pmc" id="XvB-C4-KRk"/>
                         <outlet property="userTxt" destination="lxK-Dj-UFA" id="PbH-tg-jdY"/>
+                        <segue destination="Ibx-ta-Rl9" kind="show" identifier="profile" id="mO0-V3-2vW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNT-gG-lhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="-155.17241379310346"/>
+            <point key="canvasLocation" x="89" y="-155"/>
         </scene>
         <!--Purpose-->
         <scene sceneID="iOy-EO-oyM">
@@ -758,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg4-pr-meJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="-155.17241379310346"/>
+            <point key="canvasLocation" x="89" y="565"/>
         </scene>
     </scenes>
     <resources>
@@ -768,6 +781,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Xoh-Or-1S8"/>
+        <segue reference="mO0-V3-2vW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

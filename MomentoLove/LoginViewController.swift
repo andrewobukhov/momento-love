@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SkyFloatingLabelTextField
 
 class LoginViewController: UIViewController {
     
@@ -33,14 +32,40 @@ class LoginViewController: UIViewController {
         animateDatepicker(false)
     }
     
-    @IBAction func emailEditingDidEndAction(_ sender: Any) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        animateDatepicker(true)
+    }
+    
+    @IBAction func editingChanged(_ sender: Any) {
+        Shared.shared.user.name = nameTxt.text != nil ? nameTxt.text! : String()
         Shared.shared.user.email = emailTxt.text != nil ? emailTxt.text! : String()
+        
         validate()
     }
     
-    @IBAction func nameEditingDidEndAction(_ sender: Any) {
-        Shared.shared.user.name = nameTxt.text != nil ? nameTxt.text! : String()
-        validate()
+    @IBAction func createAccountAction(_ sender: Any) {
+        guard let email = emailTxt.text, email.isNotEmpty() else {
+            createAlert("Enter your email")
+            return
+        }
+        
+        guard let name = nameTxt.text, name.isNotEmpty() else {
+            createAlert("Enter your name")
+            return
+        }
+        
+        UserService.instance.createUser(email: email, password: "only4you") {(user, error) in
+            if let user = user {
+                
+                Shared.shared.user.id = user.uid
+                UserService.instance.updateUser(user: Shared.shared.user)
+                
+                self.performSegue(withIdentifier: "profile", sender: self)
+                
+            } else if let e = error?.localizedDescription {
+                self.createAlert(e)
+            }
+        }
     }
     
     
@@ -102,7 +127,8 @@ class LoginViewController: UIViewController {
     
     func animateMakeBigLogo(){
         UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
-            //self.logoImg.
+            //self.logoImg.bounds.size.width = 134
+            //self.logoImg.bounds.size.height = 40
         }, completion: nil)
         
         //small x: 140 y: 28 width: 94 height: 30
@@ -119,8 +145,5 @@ class LoginViewController: UIViewController {
         let color = isValid ? UIColor.blue : UIColor.lightGray
         
         createAccount.setTitleColor(color, for: .normal)
-        
-        print("validate", isValid)
-        
     }
 }

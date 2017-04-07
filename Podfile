@@ -8,8 +8,6 @@ target 'MomentoLove' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'SkyFloatingLabelTextField', '~> 3.0.0'
-		
-  # Pods for MomentoLove
-
+  pod 'Firebase/Storage'
+  
 end

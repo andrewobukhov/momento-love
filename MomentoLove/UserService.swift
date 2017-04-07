@@ -17,18 +17,21 @@ final class UserService {
     
     private init() {
     }
+    
+    public static func getUid() -> String! {
+        if let uid = FIRAuth.auth()?.currentUser?.uid {
+            return uid
+        }
+        
+        return nil
+    }
 
-    public func updateUser(values: [AnyHashable : Any]){
+    public func updateUser(user: User){
         guard let uid = FIRAuth.auth()?.currentUser?.uid else {
             return
         }
         
-        usersRef.child(uid).updateChildValues(values)
-    }
-    
-    public func updateUser(user: User){
-        let values = ["email": user.email, "sex": user.sex] as [AnyHashable : Any]
-        updateUser(values: values)
+        usersRef.child(uid).updateChildValues(user.getValues())
     }
     
     func createUser(email: String, password: String, completion: FirebaseAuth.FIRAuthResultCallback? = nil){
@@ -37,5 +40,28 @@ final class UserService {
     
     func signIn(email: String, password: String, completion: FirebaseAuth.FIRAuthResultCallback? = nil) {
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: completion)
+    }
+
+    func isLoggedIn() -> Bool {
+        return FIRAuth.auth()?.currentUser?.uid != nil
+    }
+    
+    func getCurrentUser(completion: @escaping (User?) -> Swift.Void) {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
+            return
+        }
+        
+        usersRef.child(uid).observeSingleEvent(of: .value, with: { (data) in
+            Shared.shared.user = User.getUser(data.value as! [String: Any])
+            
+            Shared.shared.user.id = UserService.getUid() ?? String()
+            completion(Shared.shared.user)
+        })
+    }
+    
+    func fetchUsers(completion: @escaping (User?) -> Swift.Void){
+        usersRef.observe(.childAdded, with: { (data) in
+            completion(User.getUser(data.value as! [String: Any]))
+        })
     }
 }
