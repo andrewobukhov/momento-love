@@ -11,14 +11,6 @@
 		DD1F8DF41E8AFA17007BB654 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF31E8AFA17007BB654 /* DataService.swift */; };
 		DD1F8DF71E8B0192007BB654 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F8DF61E8B0192007BB654 /* UserService.swift */; };
 		DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972371E8ED55C00A47372 /* LoginViewController.swift */; };
-		DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2972491E8EDF7400A47372 /* DatepickerView.swift */; };
-		DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD29724B1E8EE01100A47372 /* DatepickerView.xib */; };
-		DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972511E8F15B000A47372 /* IMG_0172.PNG */; };
-		DD2972591E8F15B000A47372 /* IMG_0173.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972521E8F15B000A47372 /* IMG_0173.PNG */; };
-		DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972531E8F15B000A47372 /* IMG_0174.PNG */; };
-		DD29725B1E8F15B000A47372 /* IMG_0175.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972541E8F15B000A47372 /* IMG_0175.PNG */; };
-		DD29725C1E8F15B000A47372 /* IMG_0176.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972551E8F15B000A47372 /* IMG_0176.PNG */; };
-		DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DD2972561E8F15B000A47372 /* IMG_0177.PNG */; };
 		DD7ECA411E89A745004B9262 /* SexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA401E89A745004B9262 /* SexController.swift */; };
 		DD7ECA451E89A941004B9262 /* PurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7ECA441E89A941004B9262 /* PurposeController.swift */; };
 		DD9AF7011E9818130050FE01 /* people.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD9AF6FC1E9818130050FE01 /* people.jpg */; };
@@ -27,6 +19,7 @@
 		DD9AF7041E9818130050FE01 /* messages.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD9AF6FF1E9818130050FE01 /* messages.jpg */; };
 		DD9AF7051E9818130050FE01 /* info.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD9AF7001E9818130050FE01 /* info.jpg */; };
 		DD9AF7081E9825A80050FE01 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9AF7071E9825A80050FE01 /* ImageService.swift */; };
+		DDAEB3BA1E995FC00098A892 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEB3B91E995FC00098A892 /* UIImageViewExt.swift */; };
 		DDCEABDF1E8C48E0004EA986 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCEABDE1E8C48E0004EA986 /* Login.storyboard */; };
 		DDD58D921E92E379005B307B /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD58D911E92E379005B307B /* Users.storyboard */; };
 		DDD58D951E92F089005B307B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD58D941E92F089005B307B /* Profile.storyboard */; };
@@ -55,14 +48,6 @@
 		DD1F8DF31E8AFA17007BB654 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DD1F8DF61E8B0192007BB654 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DD2972371E8ED55C00A47372 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DD2972491E8EDF7400A47372 /* DatepickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatepickerView.swift; sourceTree = "<group>"; };
-		DD29724B1E8EE01100A47372 /* DatepickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatepickerView.xib; sourceTree = "<group>"; };
-		DD2972511E8F15B000A47372 /* IMG_0172.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0172.PNG; sourceTree = "<group>"; };
-		DD2972521E8F15B000A47372 /* IMG_0173.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0173.PNG; sourceTree = "<group>"; };
-		DD2972531E8F15B000A47372 /* IMG_0174.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0174.PNG; sourceTree = "<group>"; };
-		DD2972541E8F15B000A47372 /* IMG_0175.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0175.PNG; sourceTree = "<group>"; };
-		DD2972551E8F15B000A47372 /* IMG_0176.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0176.PNG; sourceTree = "<group>"; };
-		DD2972561E8F15B000A47372 /* IMG_0177.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0177.PNG; sourceTree = "<group>"; };
 		DD7ECA401E89A745004B9262 /* SexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexController.swift; sourceTree = "<group>"; };
 		DD7ECA441E89A941004B9262 /* PurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeController.swift; sourceTree = "<group>"; };
 		DD9AF6FC1E9818130050FE01 /* people.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people.jpg; sourceTree = "<group>"; };
@@ -71,6 +56,7 @@
 		DD9AF6FF1E9818130050FE01 /* messages.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = messages.jpg; sourceTree = "<group>"; };
 		DD9AF7001E9818130050FE01 /* info.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = info.jpg; sourceTree = "<group>"; };
 		DD9AF7071E9825A80050FE01 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		DDAEB3B91E995FC00098A892 /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		DDCEABDE1E8C48E0004EA986 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DDD58D911E92E379005B307B /* Users.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
 		DDD58D941E92F089005B307B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -143,23 +129,6 @@
 			name = UserService;
 			sourceTree = "<group>";
 		};
-		DD2972391E8EDC3A00A47372 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				DD29723E1E8EDCD800A47372 /* Datepicker */,
-			);
-			name = Shared;
-			sourceTree = "<group>";
-		};
-		DD29723E1E8EDCD800A47372 /* Datepicker */ = {
-			isa = PBXGroup;
-			children = (
-				DD2972491E8EDF7400A47372 /* DatepickerView.swift */,
-				DD29724B1E8EE01100A47372 /* DatepickerView.xib */,
-			);
-			name = Datepicker;
-			sourceTree = "<group>";
-		};
 		DD29724D1E8F154300A47372 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,12 +137,6 @@
 				DD9AF6FE1E9818130050FE01 /* main.jpg */,
 				DD9AF6FF1E9818130050FE01 /* messages.jpg */,
 				DD9AF7001E9818130050FE01 /* info.jpg */,
-				DD2972511E8F15B000A47372 /* IMG_0172.PNG */,
-				DD2972521E8F15B000A47372 /* IMG_0173.PNG */,
-				DD2972531E8F15B000A47372 /* IMG_0174.PNG */,
-				DD2972541E8F15B000A47372 /* IMG_0175.PNG */,
-				DD2972551E8F15B000A47372 /* IMG_0176.PNG */,
-				DD2972561E8F15B000A47372 /* IMG_0177.PNG */,
 			);
 			name = Screenshots;
 			sourceTree = "<group>";
@@ -250,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				DD29724D1E8F154300A47372 /* Screenshots */,
-				DD2972391E8EDC3A00A47372 /* Shared */,
 				DDCEABD91E8C4700004EA986 /* Views */,
 				DD1F8DF21E8AFA00007BB654 /* Services */,
 				DDDCCA5D1E88658300B924B7 /* Data */,
@@ -282,6 +244,7 @@
 				DDFF594D1E902EED007C0612 /* UIViewControllerExt.swift */,
 				DDFF594F1E9047E9007C0612 /* DateExt.swift */,
 				DDFF59511E904E0C007C0612 /* StringExt.swift */,
+				DDAEB3B91E995FC00098A892 /* UIImageViewExt.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -351,18 +314,11 @@
 			files = (
 				DDD58D921E92E379005B307B /* Users.storyboard in Resources */,
 				DDDCCA4C1E88310800B924B7 /* LaunchScreen.storyboard in Resources */,
-				DD29725C1E8F15B000A47372 /* IMG_0176.PNG in Resources */,
-				DD2972591E8F15B000A47372 /* IMG_0173.PNG in Resources */,
 				DD9AF7011E9818130050FE01 /* people.jpg in Resources */,
 				DD9AF7051E9818130050FE01 /* info.jpg in Resources */,
 				DD9AF7021E9818130050FE01 /* profile.jpg in Resources */,
 				DDCEABDF1E8C48E0004EA986 /* Login.storyboard in Resources */,
-				DD29725B1E8F15B000A47372 /* IMG_0175.PNG in Resources */,
-				DD29725D1E8F15B000A47372 /* IMG_0177.PNG in Resources */,
-				DD29725A1E8F15B000A47372 /* IMG_0174.PNG in Resources */,
 				DDDCCA541E88314600B924B7 /* GoogleService-Info.plist in Resources */,
-				DD29724C1E8EE01100A47372 /* DatepickerView.xib in Resources */,
-				DD2972581E8F15B000A47372 /* IMG_0172.PNG in Resources */,
 				DDDCCA491E88310800B924B7 /* Assets.xcassets in Resources */,
 				DD9AF7031E9818130050FE01 /* main.jpg in Resources */,
 				DDD58D951E92F089005B307B /* Profile.storyboard in Resources */,
@@ -433,6 +389,7 @@
 				DDD58D991E939588005B307B /* UsersTableViewController.swift in Sources */,
 				DDFF594E1E902EED007C0612 /* UIViewControllerExt.swift in Sources */,
 				DDFF594C1E902291007C0612 /* UIButtonExt.swift in Sources */,
+				DDAEB3BA1E995FC00098A892 /* UIImageViewExt.swift in Sources */,
 				DDD58D971E92F0CF005B307B /* ProfileViewController.swift in Sources */,
 				DDFF59561E916857007C0612 /* ForgotPasswordViewController.swift in Sources */,
 				DDFF59501E9047E9007C0612 /* DateExt.swift in Sources */,
@@ -444,7 +401,6 @@
 				DDDCCA5F1E8865B300B924B7 /* Shared.swift in Sources */,
 				DDDCCA611E8865DA00B924B7 /* User.swift in Sources */,
 				DDFF59541E9115A6007C0612 /* SignInViewController.swift in Sources */,
-				DD29724A1E8EDF7400A47372 /* DatepickerView.swift in Sources */,
 				DD2972381E8ED55C00A47372 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

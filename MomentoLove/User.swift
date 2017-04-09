@@ -20,6 +20,8 @@ final class User {
     
     public var sex: Sex = Sex.male
     
+    public var age: Int = 0
+    
     public var purpose: Purpose = Purpose.friends
     
     public var photos: [String] = []
@@ -63,6 +65,8 @@ final class User {
         user.birthday = Date()
         if let i = data["birthday"] as? Double {
             user.birthday = Date.init(timeIntervalSince1970: i)
+            
+            user.age = user.getAge(birthday: user.birthday!)
         }
         
         if let i = data["purpose"] as? Int, let purpose = Purpose.init(rawValue: i) {
@@ -70,6 +74,14 @@ final class User {
         }
         
         return user
+    }
+    
+    private func getAge(birthday: Date) -> Int {
+        let now = Date()
+        let calendar = Calendar.current
+        
+        let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+        return ageComponents.year!
     }
 }
 

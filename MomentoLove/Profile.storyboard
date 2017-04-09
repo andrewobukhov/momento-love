@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FR3-bc-yCP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FR3-bc-yCP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,7 +41,33 @@
                     <view key="view" contentMode="scaleToFill" id="NU1-7D-H4c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-1l-Dlk">
+                                <rect key="frame" x="95" y="88" width="185" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="EtO-Dw-VEG"/>
+                                    <constraint firstAttribute="width" constant="185" id="IbK-sA-3Yx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew, 27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keO-ho-Cl1">
+                                <rect key="frame" x="16" y="288" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Mv0-Ns-9yB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xSg-1l-Dlk" secondAttribute="trailing" constant="79" id="02u-ah-E4o"/>
+                            <constraint firstItem="keO-ho-Cl1" firstAttribute="trailing" secondItem="NU1-7D-H4c" secondAttribute="trailingMargin" id="N30-8N-pey"/>
+                            <constraint firstItem="xSg-1l-Dlk" firstAttribute="top" secondItem="iUg-Kt-oWY" secondAttribute="bottom" constant="24" id="cel-GB-H7k"/>
+                            <constraint firstItem="keO-ho-Cl1" firstAttribute="top" secondItem="xSg-1l-Dlk" secondAttribute="bottom" constant="15" id="kMx-d3-kui"/>
+                            <constraint firstItem="xSg-1l-Dlk" firstAttribute="leading" secondItem="NU1-7D-H4c" secondAttribute="leadingMargin" constant="79" id="uoT-7b-Mb0"/>
+                            <constraint firstItem="keO-ho-Cl1" firstAttribute="leading" secondItem="NU1-7D-H4c" secondAttribute="leadingMargin" id="x7L-EA-9lt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kzu-ms-G9V">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="cPO-K8-QMC">
@@ -51,10 +78,14 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="2Fm-xc-Tp3"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLbl" destination="keO-ho-Cl1" id="GtM-Sr-Yoj"/>
+                        <outlet property="profileImg" destination="xSg-1l-Dlk" id="10U-4d-hJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pca-HP-wXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369" y="-16"/>
+            <point key="canvasLocation" x="368.80000000000001" y="-16.641679160419791"/>
         </scene>
         <!--Users-->
         <scene sceneID="RBt-2F-yaz">
@@ -65,4 +96,7 @@
             <point key="canvasLocation" x="1086" y="-16"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="274" height="274"/>
+    </resources>
 </document>
