@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DiS-Sn-IlC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DiS-Sn-IlC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,18 +14,49 @@
         <scene sceneID="39T-OG-ZBE">
             <objects>
                 <tableViewController title="Users" id="Z54-ZH-5uy" customClass="UsersTableViewController" customModule="MomentoLove" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4HI-QF-GGf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" id="4HI-QF-GGf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jy2-Vr-jUi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="97" id="Jy2-Vr-jUi" customClass="UserTableViewCell" customModule="MomentoLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jy2-Vr-jUi" id="I31-yL-GO7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="puM-TH-1uN">
+                                            <rect key="frame" x="18" y="6" width="85" height="85"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="UzB-qv-lSi"/>
+                                                <constraint firstAttribute="height" constant="85" id="trj-yo-PzY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK3-tc-aXB">
+                                            <rect key="frame" x="111" y="38" width="234" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="234" id="Bhq-oh-jb4"/>
+                                                <constraint firstAttribute="height" constant="21" id="Xc6-tA-QAD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CK3-tc-aXB" firstAttribute="leading" secondItem="puM-TH-1uN" secondAttribute="trailing" constant="8" symbolic="YES" id="0Dz-hL-X2j"/>
+                                        <constraint firstItem="puM-TH-1uN" firstAttribute="top" secondItem="I31-yL-GO7" secondAttribute="top" constant="6" id="5AX-1r-LLy"/>
+                                        <constraint firstItem="puM-TH-1uN" firstAttribute="leading" secondItem="I31-yL-GO7" secondAttribute="leading" constant="18" id="RIh-kb-EkR"/>
+                                        <constraint firstItem="CK3-tc-aXB" firstAttribute="top" secondItem="I31-yL-GO7" secondAttribute="topMargin" constant="30" id="V7l-lj-qbU"/>
+                                        <constraint firstAttribute="bottom" secondItem="puM-TH-1uN" secondAttribute="bottom" constant="6" id="c1x-ke-aFY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CK3-tc-aXB" secondAttribute="bottom" constant="30" id="nlr-iR-Fz1"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLbl" destination="CK3-tc-aXB" id="Tx7-94-Gz5"/>
+                                    <outlet property="profileImg" destination="puM-TH-1uN" id="Yff-oc-KBJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,13 +68,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zp1-gP-CTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="133"/>
+            <point key="canvasLocation" x="1184.8" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dDY-ar-Zu1">
             <objects>
                 <navigationController id="DiS-Sn-IlC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nAf-fj-tei">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="A1M-9x-C46"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nAf-fj-tei">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -52,7 +85,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKl-d9-G1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690" y="133"/>
+            <point key="canvasLocation" x="248.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="274" height="274"/>
+    </resources>
 </document>

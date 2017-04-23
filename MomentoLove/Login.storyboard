@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1c-4E-Qea">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1c-4E-Qea">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -363,7 +363,7 @@
                         <outlet property="emailTxt" destination="Fej-g4-CqK" id="vTC-jy-csc"/>
                         <outlet property="logoImg" destination="4bD-mi-Azx" id="0eZ-qC-IrU"/>
                         <outlet property="nameTxt" destination="F0X-3b-QZd" id="TjH-pg-HA7"/>
-                        <segue destination="Ibx-ta-Rl9" kind="show" identifier="profile" id="Ikw-xc-gJj"/>
+                        <segue destination="Ibx-ta-Rl9" kind="showDetail" identifier="profile" action="showViewController:sender:" id="Ikw-xc-gJj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xU-wZ-H0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -495,7 +495,7 @@
                     <connections>
                         <outlet property="passwordTxt" destination="k4Z-zi-Pmc" id="XvB-C4-KRk"/>
                         <outlet property="userTxt" destination="lxK-Dj-UFA" id="PbH-tg-jdY"/>
-                        <segue destination="Ibx-ta-Rl9" kind="show" identifier="profile" id="mO0-V3-2vW"/>
+                        <segue destination="Ibx-ta-Rl9" kind="showDetail" identifier="profile" action="showViewController:sender:" id="mO0-V3-2vW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNT-gG-lhI" userLabel="First Responder" sceneMemberID="firstResponder"/>

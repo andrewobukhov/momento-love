@@ -15,6 +15,8 @@ final class UserService {
 
     lazy var usersRef: FIRDatabaseReference! = FIRDatabase.database().reference().child("users");
     
+    public var users: [User] = []
+    
     private init() {
     }
     
@@ -46,6 +48,12 @@ final class UserService {
         return FIRAuth.auth()?.currentUser?.uid != nil
     }
     
+    func signOut() {
+        try! FIRAuth.auth()?.signOut()
+        
+        Shared.shared.user = User()
+    }
+    
     func getCurrentUser(completion: @escaping (User?) -> Swift.Void) {
         guard let uid = FIRAuth.auth()?.currentUser?.uid else {
             return
@@ -61,7 +69,9 @@ final class UserService {
     
     func fetchUsers(completion: @escaping (User?) -> Swift.Void){
         usersRef.observe(.childAdded, with: { (data) in
-            completion(User.getUser(data.value as! [String: Any]))
+            let user = User.getUser(data.value as! [String: Any])
+            self.users.append(user)
+            completion(user)
         })
     }
 }

@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MomentoLove/UserService.swift"
-            timestampString = "513289517.531831"
+            timestampString = "514663899.923354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "createUser(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -152,61 +152,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MomentoLove/UserService.swift"
-            timestampString = "513290054.660717"
+            timestampString = "514663899.923354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "fetchUsers(completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MomentoLove/UsersTableViewController.swift"
-            timestampString = "513201076.897133"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchUsers()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MomentoLove.UsersTableViewController.(fetchUsers () -&gt; ()).(closure #1)"
-                  moduleName = "MomentoLove"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewobukhov/xcode/momento-love/MomentoLove/UsersTableViewController.swift"
-                  timestampString = "513455961.789361"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "270">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MomentoLove.UsersTableViewController.(fetchUsers () -&gt; ()).(closure #1).(implicit closure #1)"
-                  moduleName = "MomentoLove"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewobukhov/xcode/momento-love/MomentoLove/UsersTableViewController.swift"
-                  timestampString = "513455961.791323"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -344,11 +296,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MomentoLove/UserService.swift"
-            timestampString = "513290054.660717"
+            timestampString = "514663899.923354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "getCurrentUser(completion:)"
             landmarkType = "7">
             <Locations>
@@ -456,11 +408,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MomentoLove/ProfileViewController.swift"
-            timestampString = "513455903.841496"
+            timestampString = "514641279.701671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -728,11 +680,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MomentoLove/ProfileViewController.swift"
-            timestampString = "513455859.021173"
+            timestampString = "514641279.701671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FR3-bc-yCP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RnL-KN-sCo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,11 @@
         <!--Navigation Controller-->
         <scene sceneID="Eik-3K-fXX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXo-QB-EFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="FR3-bc-yCP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="Группа пользователей, мужчины-25" id="kO4-IK-H50">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uBZ-h9-JKh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,9 +30,27 @@
                         <segue destination="0vi-jc-afy" kind="relationship" relationship="rootViewController" id="qCN-bW-LyH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lXo-QB-EFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-481" y="-15"/>
+            <point key="canvasLocation" x="220" y="271"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rlr-aJ-iTz">
+            <objects>
+                <tabBarController id="RnL-KN-sCo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="csH-bL-qFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UEj-TA-H3C" kind="relationship" relationship="viewControllers" id="RBc-q1-Wdl"/>
+                        <segue destination="FR3-bc-yCP" kind="relationship" relationship="viewControllers" id="gAQ-UD-8gg"/>
+                        <segue destination="zhM-bA-7hU" kind="relationship" relationship="viewControllers" id="ftI-Am-udn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8N-9P-hph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="885"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="FTB-91-M2u">
@@ -42,7 +64,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-1l-Dlk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-1l-Dlk">
                                 <rect key="frame" x="95" y="88" width="185" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="EtO-Dw-VEG"/>
@@ -58,6 +80,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc8-Xb-7hE">
+                                <rect key="frame" x="163" y="390" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="0vi-jc-afy" eventType="touchUpInside" id="sy6-B5-gGV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -81,22 +111,44 @@
                     <connections>
                         <outlet property="nameLbl" destination="keO-ho-Cl1" id="GtM-Sr-Yoj"/>
                         <outlet property="profileImg" destination="xSg-1l-Dlk" id="10U-4d-hJy"/>
+                        <segue destination="bK3-68-oSB" kind="show" identifier="logout" id="nJM-Ph-D62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pca-HP-wXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368.80000000000001" y="-16.641679160419791"/>
+            <point key="canvasLocation" x="1119" y="270"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="52Z-A5-nut">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="bK3-68-oSB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0l-h7-026" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="269"/>
         </scene>
         <!--Users-->
         <scene sceneID="RBt-2F-yaz">
             <objects>
-                <viewControllerPlaceholder storyboardName="Users" id="UEj-TA-H3C" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Users" id="UEj-TA-H3C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="I1d-oD-Dyj"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDK-Z3-uWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="-16"/>
+            <point key="canvasLocation" x="70" y="884"/>
+        </scene>
+        <!--Likes-->
+        <scene sceneID="evf-PJ-qeh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Likes" id="zhM-bA-7hU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lBR-C8-lma"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6P-xd-bop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="971"/>
         </scene>
     </scenes>
     <resources>
         <image name="avatar" width="274" height="274"/>
+        <image name="Группа пользователей, мужчины-25" width="25" height="25"/>
     </resources>
 </document>

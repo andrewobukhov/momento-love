@@ -22,6 +22,7 @@ UINavigationControllerDelegate {
         
         self.setNavigationBarColor(color: .white, textColor: .black)
         
+        
         UserService.instance.getCurrentUser(completion: {(user) in
             if let u = user {
                 self.nameLbl.text = "\(u.name), \(u.age)"
@@ -35,6 +36,14 @@ UINavigationControllerDelegate {
         })
         
         initProfileImg()
+        
+        self.hideNavigationBar()
+
+    }
+    
+    @IBAction func logoutBtn(_ sender: Any) {
+        UserService.instance.signOut()
+        performSegue(withIdentifier: "logout", sender: self)
     }
     
     func initProfileImg() {
@@ -49,7 +58,8 @@ UINavigationControllerDelegate {
             navBar.backgroundColor = UIColor.clear
             navBar.setBackgroundImage(UIImage(), for: .default)
             navBar.shadowImage = UIImage()
-        }
+
+                    }
         
     }
     
@@ -70,8 +80,6 @@ UINavigationControllerDelegate {
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             profileImg.image = image
             
