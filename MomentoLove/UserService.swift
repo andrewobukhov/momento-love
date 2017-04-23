@@ -74,4 +74,10 @@ final class UserService {
             completion(user)
         })
     }
+    
+    public func getUsersWithPhotos() -> [User] {
+        return self.users.filter { (u) -> Bool in
+            return !(u.photos.isEmpty)
+        }
+    }
 }

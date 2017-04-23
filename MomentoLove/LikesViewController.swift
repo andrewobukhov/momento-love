@@ -9,7 +9,7 @@
 import UIKit
 
 class LikesViewController: UIViewController {
-
+    
     var scrollWidth: CGFloat = 0
     var scrollHeight: CGFloat = 0
     
@@ -19,7 +19,7 @@ class LikesViewController: UIViewController {
     
     @IBAction func likeAction(_ sender: Any) {
         currentUserIndex += 1
-        setImages(user: UserService.instance.users[currentUserIndex])
+        setImages(UserService.instance.users[currentUserIndex])
     }
     
     override func viewDidLoad() {
@@ -28,16 +28,25 @@ class LikesViewController: UIViewController {
         self.scrollWidth = imagesScrollView.frame.width
         self.scrollHeight = imagesScrollView.frame.height
         
-        setImages(user: Shared.shared.user)
+        like()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    func setImages(user: User){
+    
+    public func like(){
+        let users = UserService.instance.getUsersWithPhotos()
+        
+        if (users.count > currentUserIndex){
+            setImages(users[currentUserIndex])
+            currentUserIndex += 1
+        }
+    }
+    
+    func setImages(_ user: User){
         for (i, photo) in user.photos.enumerated() {
             print("Item \(i): \(photo)")
             
@@ -53,5 +62,5 @@ class LikesViewController: UIViewController {
             
         }
     }
-
+    
 }

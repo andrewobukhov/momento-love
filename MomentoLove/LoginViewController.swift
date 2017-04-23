@@ -116,6 +116,8 @@ class LoginViewController: UIViewController {
     }
     
     func animateDatepicker(_ isHidden: Bool) {
+        view.endEditing(true)
+        
         datepickerView.isHidden = false
         
         birthdayTxt.isUserInteractionEnabled = isHidden
