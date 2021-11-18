@@ -7,3 +7,6 @@
 3) pod install
 4) Open folder momento-love in terminal
 5) Doubleclick on MomentoLove.xcworkspace. Important: **Don't open** MomentoLove.**xcodeproj**
+
+
+
